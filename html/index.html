@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="header" id="top">
+    <div class="header__top">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="header__contact">
+                        <a href="tel:+330499632050">
+                            <i class="bi bi-telephone header__contact-icon"></i>
+                            <span>+33 (0)4 99 63 20 50</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="header__lang-switcher  justify-content-end d-flex">
+                        <div class="dropdown">
+                            <button class="btn btn-sm dropdown-toggle p-0 border-0" type="button" id="lang-menu"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-globe2 header__contact-globe-icon"></i>
+                                <span>English</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="lang-menu">
+                                <li>
+                                    <button class="dropdown-item" type="button">Ukrainian</button>
+                                </li>
+                                <li>
+                                    <button class="dropdown-item" type="button">Turkish</button>
+                                </li>
+                                <li>
+                                    <button class="dropdown-item" type="button">German</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__navigation">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img class="img-fluid" src="../assets/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item header__search-wrapper d-flex align-items-center">
+                            <a class="nav-link header__search p-0" href="#" data-bs-toggle="modal"
+                               data-bs-target="#searchModal">
+                                <i class="bi bi-search"></i>
+                            </a>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle p-0" href="#" id="productsDropdown" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                                <li><a class="dropdown-item" href="#">Product #1</a></li>
+                                <li><a class="dropdown-item" href="#">Product #2</a></li>
+                                <li><a class="dropdown-item" href="#">Product #3</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle p-0" href="#" id="applicationsDropdown" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                Applications
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="applicationsDropdown">
+                                <li><a class="dropdown-item" href="#">Application #1</a></li>
+                                <li><a class="dropdown-item" href="#">Application #2</a></li>
+                                <li><a class="dropdown-item" href="#">Application #3</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link p-0" href="#">Documentation</a>
+                        </li>
+
+                    </ul>
+
+
+                    <div class="d-flex header__auth">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal">
+                            <i class="bi bi-person"></i>
+                        </a>
+
+                        <a data-bs-toggle="offcanvas" href="#cartSection" role="button"
+                           aria-controls="offcanvasExample">
+                            <i class="bi bi-cart3"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<section class="search">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb  mt-3">
+                <li class="breadcrumb-item active" aria-current="page">Products</li>
+                <li class="breadcrumb-item"><a href="#">Display Wall</a></li>
+                <li class="breadcrumb-item"><a href="#">Products</a></li>
+            </ol>
+        </nav>
+
+        <h2 class="search__title fw-bold">Display Wall</h2>
+        <div class="search__form d-flex align-items-end  flex-wrap">
+            <div class="col-md-2 col-sm-3 col-6 pb-sm-0 pb-2 dropdown">
+                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                    Display Wall
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Действие</a></li>
+                    <li><a class="dropdown-item" href="#">Другое действие</a></li>
+                    <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+                </ul>
+            </div>
+            <div class=" col-md-2 col-sm-3 col-6 pb-sm-0 ps-4 pb-2  btn-offcanvas d-lg-none d-block">
+                <button class="btn btn-light  " type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#staticBackdrop"
+                        aria-controls="staticBackdrop">
+                    Filters
+                </button>
+            </div>
+            <div class="col-lg-10 col-md-8 col-sm-6 col-12  ps-sm-4 ps-0">
+
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<section class="products">
+    <div class="container">
+        <div class="products__inner mb-5">
+            <div class="row m-0">
+                <div class="products__inner-col d-none d-lg-block  col-2 p-0">
+                    <div class="products__col bg-white   p-3">
+                        <div class="products__results d-flex flex-wrap justify-content-between">
+                            23 Results
+                            <span class="products__results-red"><i class="bi bi-x-circle"></i> Clear all Filters</span>
+                        </div>
+                        <h6 class="products__toggle-title text-primary">Subcategory</h6>
+                        <div class="list-group">
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                Xpressions
+                            </label>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                Xtension
+                            </label>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                Virage
+                            </label>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                Contour
+                            </label>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                Xperience
+                            </label>
+                        </div>
+                        <hr>
+                        <h6 class="products__toggle-title text-primary">Type</h6>
+                        <div class="list-group">
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                Pop-up
+                            </label>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                Tubar
+                            </label>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                Table top
+                            </label>
+                        </div>
+                        <hr>
+                        <h6 class="products__toggle-title text-primary">Features</h6>
+                        <div class="list-group">
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                Backlit
+                            </label>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                TV Mount
+                            </label>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                Shelving
+                            </label>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                Arch
+                            </label>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                Double sided
+                            </label>
+                        </div>
+                        <hr>
+                        <h6 class="products__toggle-title text-primary">Width</h6>
+                        <div class="list-group">
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                2.5
+                            </label>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                5
+                            </label>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                8
+                            </label>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                10
+                            </label>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                20
+                            </label>
+                        </div>
+                        <hr>
+                        <h6 class="products__toggle-title text-primary">Height</h6>
+                        <div class="list-group">
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                4
+                            </label>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                8
+                            </label>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                10
+                            </label>
+                        </div>
+                        <hr>
+                        <h6 class="products__toggle-title text-primary">Form</h6>
+                        <div class="list-group">
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                Straight
+                            </label>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                Curved
+                            </label>
+                        </div>
+                        <hr>
+                        <h6 class="products__toggle-title text-primary">Price Range</h6>
+                        <div class="list-group">
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                550-699
+                            </label>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                700-999
+                            </label>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                1000-1999
+                            </label>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                2000-3999
+                            </label>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                4000+
+                            </label>
+                        </div>
+                        <hr>
+                        <h6 class="products__toggle-title text-primary">Set-up Time</h6>
+                        <div class="list-group">
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                1+ (Fast)
+                            </label>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                5+ (Easy)
+                            </label>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                10+ (Average)
+                            </label>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="">
+                                20+ (Expert)
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-12 p-0 ps-lg-4 ps-0 ">
+                    <div class="products__product-inner products__col d-flex    flex-wrap justify-content-between gap20">
+                        <div class="products__box products__box1 mb-4  bg-white text-center tag-new">
+                            <img class="products__img" src="/assets/img1.png" alt="product">
+                            <p class="products__name">Contour 10x4</p>
+                            <p class="products__price">8123,99 €</p>
+                        </div>
+                        <div class="products__box products__box2 mb-4 bg-white text-center tag-best tag-teams">
+                            <img class="products__img" src="/assets/img2.png" alt="product">
+                            <p class="products__name">Contour 10x4</p>
+                            <p class="products__price">8123,99 €</p>
+                        </div>
+                        <div class="products__box products__box3 mb-4 bg-white text-center">
+                            <img class="products__img" src="/assets/img3.png" alt="product">
+                            <p class="products__name">Contour 10x4</p>
+                            <p class="products__price">8123,99 €</p>
+                        </div>
+                        <div class="products__box products__box1 mb-4 bg-white text-center tag-best">
+                            <img class="products__img" src="/assets/img1.png" alt="product">
+                            <p class="products__name">Contour 10x4</p>
+                            <p class="products__price">8123,99 €</p>
+                        </div>
+                        <div class="products__box products__box2 mb-4 bg-white text-center">
+                            <img class="products__img" src="/assets/img4.png" alt="product">
+                            <p class="products__name">Contour 10x4</p>
+                            <p class="products__price">8123,99 €</p>
+                        </div>
+                        <div class="products__box products__box3 mb-4 bg-white text-center tag-new">
+                            <img class="products__img" src="/assets/img3.png" alt="product">
+                            <p class="products__name">Contour 10x4</p>
+                            <p class="products__price">8123,99 €</p>
+                        </div>
+                        <div class="products__box products__box3 mb-4 bg-white text-center tag-new">
+                            <img class="products__img" src="/assets/img1.png" alt="product">
+                            <p class="products__name">Contour 10x4</p>
+                            <p class="products__price">8123,99 €</p>
+                        </div>
+                        <div class="products__box products__box3 mb-4 bg-white text-center tag-teams tag-best">
+                            <img class="products__img" src="/assets/img2.png" alt="product">
+                            <p class="products__name">Contour 10x4</p>
+                            <p class="products__price">8123,99 €</p>
+                        </div>
+                        <div class="products__box products__box3 mb-4 bg-white text-center">
+                            <img class="products__img" src="/assets/img3.png" alt="product">
+                            <p class="products__name">Contour 10x4</p>
+                            <p class="products__price">8123,99 €</p>
+                        </div>
+                        <div class="products__box products__box3 mb-4 bg-white text-center tag-new">
+                            <img class="products__img" src="/assets/img1.png" alt="product">
+                            <p class="products__name">Contour 10x4</p>
+                            <p class="products__price">8123,99 €</p>
+                        </div>
+                        <div class="products__box products__box3 mb-4 bg-white text-center tag-teams tag-best">
+                            <img class="products__img" src="/assets/img2.png" alt="product">
+                            <p class="products__name">Contour 10x4</p>
+                            <p class="products__price">8123,99 €</p>
+                        </div>
+                        <div class="products__box products__box3 mb-4 bg-white text-center">
+                            <img class="products__img" src="/assets/img3.png" alt="product">
+                            <p class="products__name">Contour 10x4</p>
+                            <p class="products__price">8123,99 €</p>
+                        </div>
+                        <div class="products__box products__box3 mb-4 bg-white text-center tag-new">
+                            <img class="products__img" src="/assets/img1.png" alt="product">
+                            <p class="products__name">Contour 10x4</p>
+                            <p class="products__price">8123,99 €</p>
+                        </div>
+                        <div class="products__box products__box3 mb-4 bg-white text-center tag-teams tag-best">
+                            <img class="products__img" src="/assets/img2.png" alt="product">
+                            <p class="products__name">Contour 10x4</p>
+                            <p class="products__price">8123,99 €</p>
+                        </div>
+                        <div class="products__box products__box3 mb-4 bg-white text-center">
+                            <img class="products__img" src="/assets/img3.png" alt="product">
+                            <p class="products__name">Contour 10x4</p>
+                            <p class="products__price">8123,99 €</p>
+                        </div>
+                    </div>
+                    <div class="products__number">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination mb-0 ">
+                                    <li class="page-item ">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true"><i class="bi bi-arrow-left"></i></span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item "><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item "><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item "><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item ">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true"><i class="bi bi-arrow-right"></i></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="btn-group">
+                                <button type="button"
+                                        class="btn btn-sm btn-light bg-white px-4 rounded-pill  dropdown-toggle"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                    40
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">30</a></li>
+                                    <li><a class="dropdown-item" href="#">40</a></li>
+                                    <li><a class="dropdown-item" href="#">50</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer bg-dark text-white">
+    <div class="container">
+        <div class="footer__inner row py-5 bg-opacity-75">
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-4"><a href="#" class="mb-3 link-dark text-decoration-none">
+                        <img src="../assets/logo-footer.png" alt="logo">
+                    </a></li>
+                    <li class="nav-item mb-4"><a href="#" class="nav-link p-0 text-muted">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <span>344, rue Jardin Colar - 34130
+                        LANSARGUES - FRANCE</span></a></li>
+                    <li class="nav-item mb-4"><a href=tel:+330499632050" class="nav-link p-0 text-muted">
+                        <i class="bi bi-telephone-fill"></i>
+                        <span>+33 (0)4 99 63 20 50</span></a></li>
+                    <li class="nav-item mb-4"><a href="sales@duodisplay.com" class="nav-link p-0 text-muted">
+                        <i class="bi bi-envelope-fill"></i>
+                        <span>sales@duodisplay.com</span></a></li>
+                    <li class="nav-item mb-4"><a href="#" class="mb-3 link-dark text-decoration-none">
+                        <img src="../assets/logo-france.png" alt="logo">
+                    </a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg col-md-3 col-sm-6 mb-3">
+                <h5>Products</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-muted">Banner stands</a></li>
+                    <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-muted"> Display Wall</a></li>
+                    <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-muted">Counters</a></li>
+                    <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-muted">Outdoor</a></li>
+                    <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-muted">Frames</a></li>
+                    <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-muted"> Stands</a></li>
+                    <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-muted"> Outdoor</a></li>
+                    <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-muted">Frames</a></li>
+                    <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-muted">Stands</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg col-md-3 col-sm-6 mb-3">
+                <h5> Applications</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tradeshows</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Events</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Road-shows</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Decoration</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Retail</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Printing</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg col-md-3 col-sm-6 mb-3">
+                <h5>My Profile</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"> Dashboard</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"> Account</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Orders</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"> Quotes</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">My Contacts</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg col-md-3 col-sm-6 mb-3">
+                <h5> Duo Display</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"> About Duo</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"> General terms</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"> Warranty</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Legal notice</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"> Contact us</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-12 mb-3 px-xl-5 px-2">
+                <h5>Newsletter</h5>
+                <div class="mb-3">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1"
+                               class="form-label"></label>
+                        <input type="email" class="form-control  rounded-pill bg-transparent text-white"
+                               id="exampleFormControlInput1"
+                               placeholder="Your email address">
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="btn rounded-pill dropdown-toggle w-100 bg-transparent text-white text-center border "
+                                type="button"
+                                id="lang-menu-foot"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-globe2 header__contact-globe-icon"></i>
+                            <span>English</span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="lang-menu-foot">
+                            <li>
+                                <button class="dropdown-item" type="button">Ukrainian</button>
+                            </li>
+                            <li>
+                                <button class="dropdown-item" type="button">Turkish</button>
+                            </li>
+                            <li>
+                                <button class="dropdown-item" type="button">German</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__social fs-4 d-flex justify-content-between ">
+                    <a href=""> <i class="bi bi-discord"></i></a>
+                    <a href=""> <i class="bi bi-twitter"></i></a>
+                    <a href=""> <i class="bi bi-facebook"></i></a>
+                    <a href=""> <i class="bi bi-instagram"></i></a>
+                    <a href=""> <i class="bi bi-linkedin"></i></a>
+                    <a href=""> <i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copy ">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="w-75">© 2021 Duo Industrie. All rights reserved. From Duo with <span><i
+                        class="bi bi-heart ms-4"></i></span>
+                </div>
+                <div class="arrow-top me-sm-5 me-2 fs-3"><a href="#top"><i class="bi bi-arrow-up-circle-fill"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<!-- Modal offcanvas -->
+<div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+     aria-labelledby="staticBackdropLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div>
+            <div class="products__results d-flex flex-wrap justify-content-between">
+                23 Results
+                <span class="products__results-red"><i class="bi bi-x-circle"></i> Clear all Filters</span>
+            </div>
+            <h6 class="products__toggle-title text-primary">Subcategory</h6>
+            <div class="list-group">
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Xpressions
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Xtension
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Virage
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Contour
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Xperience
+                </label>
+            </div>
+            <hr>
+            <h6 class="products__toggle-title text-primary">Type</h6>
+            <div class="list-group">
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Pop-up
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Tubar
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Table top
+                </label>
+            </div>
+            <hr>
+            <h6 class="products__toggle-title text-primary">Features</h6>
+            <div class="list-group">
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Backlit
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    TV Mount
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Shelving
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Arch
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Double sided
+                </label>
+            </div>
+            <hr>
+            <h6 class="products__toggle-title text-primary">Width</h6>
+            <div class="list-group">
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    2.5
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    5
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    8
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    10
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    20
+                </label>
+            </div>
+            <hr>
+            <h6 class="products__toggle-title text-primary">Height</h6>
+            <div class="list-group">
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    4
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    8
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    10
+                </label>
+            </div>
+            <hr>
+            <h6 class="products__toggle-title text-primary">Form</h6>
+            <div class="list-group">
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Straight
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Curved
+                </label>
+            </div>
+            <hr>
+            <h6 class="products__toggle-title text-primary">Price Range</h6>
+            <div class="list-group">
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    550-699
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    700-999
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    1000-1999
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    2000-3999
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    4000+
+                </label>
+            </div>
+            <hr>
+            <h6 class="products__toggle-title text-primary">Set-up Time</h6>
+            <div class="list-group">
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    1+ (Fast)
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    5+ (Easy)
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    10+ (Average)
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    20+ (Expert)
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Search -->
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search product</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Register -->
+<div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+     aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="registerModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="emailInput" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+                </div>
+
+                <div class="mb-3">
+                    <label for="passwordInput" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="passwordInput" placeholder="Password">
+                </div>
+                <div class="mb-3">
+                    <label for="repeatPasswordInput" class="form-label">Repeat password</label>
+                    <input type="password" class="form-control" id="repeatPasswordInput" placeholder="Repeat password">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Cart section -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cartSection" aria-labelledby="cartSectionLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="cartSectionLabel">Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div>
+            Your cart is empty
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+</html>

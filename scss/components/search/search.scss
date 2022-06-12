@@ -1,0 +1,42 @@
+.search {
+  margin-bottom: 22px;
+
+  .breadcrumb-item {
+    font-size: $font-sm;
+  }
+
+  &__title {
+    font-size: $font-title;
+  }
+
+
+  .btn {
+    width: 100%;
+    font-size: $font-md;
+    border-radius: 40px;
+    text-align: inherit;
+    background: #ffffff;
+    box-shadow: 0px 4px 7px 0px #9D9D9D1A;
+
+
+  }
+
+  .form-control {
+    border-radius: 40px;
+    padding-left: 20px;
+    position: relative;
+    box-shadow: 0px 4px 7px 0px #9D9D9D1A;
+    border: none;
+  }
+
+  .form-control:before {
+    position: absolute;
+    content: "";
+    background: url("../assets/search.svg");
+    width: 16px;
+    height: 16px;
+    top: 1px;
+    left: 1px;
+  }
+
+}

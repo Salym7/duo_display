@@ -1,0 +1,58 @@
+.header {
+  box-shadow: 0 0 12px rgba(72, 79, 78, 0.17);
+
+  &__top {
+    background-color: $main-bg;
+    font-size: $font-sm;
+    padding: 5px 0;
+  }
+
+  &__contact-globe-icon,
+  &__contact-icon {
+    padding-right: 8px;
+  }
+
+  &__lang-switcher {
+    button,
+    .dropdown-item {
+      font-size: $font-sm;
+    }
+  }
+
+  &__search-wrapper {
+    margin-right: 65px;
+  }
+
+  &__search {
+    font-size: $header-icons-size;
+    padding-left: 0;
+    padding-right: 65px;
+  }
+
+  &__navigation {
+    .nav-item {
+
+      &:not(:first-child) {
+        &:not(:last-child) {
+          margin-right: 30px
+        }
+      }
+
+
+    }
+  }
+
+  &__auth {
+    gap: 16px;
+
+
+    i.bi-cart3 {
+      font-size: $header-right-icons-size;
+    }
+
+    i.bi-person {
+      font-size: calc(#{$header-right-icons-size} * 1.05);
+    }
+  }
+
+}

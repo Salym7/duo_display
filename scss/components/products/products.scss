@@ -1,0 +1,101 @@
+.products {
+
+  &__results {
+    font-size: 12px;
+
+    &-red {
+      color: red;
+    }
+  }
+
+  .col-left {
+    border-radius: $border-radius;
+  }
+
+  &__col {
+    border-radius: $border-radius;
+  }
+
+  &__box {
+    border-radius: $border-radius;
+    width: 30%;
+  }
+
+  .list-group-item {
+    padding: 7px 0;
+
+  }
+
+  .h6 {
+    font-size: 17px;
+  }
+
+  .list-group-item {
+    border: none;
+  }
+
+  &__toggle-title {
+    font-size: 17px;
+    position: relative;
+  }
+
+  &__toggle-title:after {
+    position: absolute;
+    content: '';
+    background-image: url("../assets/chevron-compact-up.svg");
+    height: 15px;
+    width: 15px;
+    top: 3px;
+    right: 0px;
+  }
+
+  &__name {
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 17px;
+  }
+
+  &__price {
+    font-size: 17px;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  .tag-new, .tag-teams, .tag-best {
+    position: relative;
+  }
+
+  .tag-new:before {
+    position: absolute;
+    content: '';
+    width: 56px;
+    height: 26px;
+    right: 10px;
+    top: 10px;
+    background-image: url("../assets/tag-new.svg");
+  }
+
+  .tag-best:before {
+    position: absolute;
+    content: '';
+    width: 56px;
+    height: 26px;
+    right: 10px;
+    top: 10px;
+    background-image: url("/assets/tag-best.svg");
+  }
+
+  .tag-teams:after {
+    position: absolute;
+    content: '';
+    width: 56px;
+    height: 26px;
+    right: 10px;
+    top: 40px;
+    background-image: url("../assets/tag-teams.svg");
+  }
+
+
+}
