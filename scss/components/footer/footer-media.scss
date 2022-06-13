@@ -1,0 +1,15 @@
+.footer {
+  @media (max-width: 576px) {
+    &__logo {
+      margin: 0 auto;
+    }
+    h5 {
+      text-align: center;
+    }
+    .nav-link {
+      text-align: center;
+      font-size: 17px;
+    }
+  }
+}
+

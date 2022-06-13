@@ -1,10 +1,29 @@
 :root {
   --bs-link-color: black;
+
 }
 
 .navbar {
   --bs-navbar-brand-margin-end: 45px;
   --bs-navbar-color: black;
+}
+
+.accordion {
+  --bs-accordion-active-bg: none;
+  --bs-accordion-border-width: none;
+  --bs-accordion-btn-focus-border-color: none;
+  --bs-accordion-body-padding-y: 0;
+  --bs-accordion-body-padding-x: 0;
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-accordion-btn-padding-x: 0;
+
+
+  .list-group-item {
+    --bs-list-group-border-width: 0;
+    --bs-list-group-border-color: none;
+    --bs-list-group-item-padding-x: 0;
+  }
+
 }
 
 

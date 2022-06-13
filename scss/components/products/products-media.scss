@@ -1,15 +1,42 @@
 .products {
+  @media (max-width: 1366px) {
+    &__two-image img {
+      width: 272px;
+    }
+  }
+  @media (max-width: 1240px) {
+    &__two-image img {
+      width: 227px;
+    }
+  }
   @media (max-width: 992px) {
-
+    &__two-image img {
+      width: 208px;
+    }
   }
   @media (max-width: 768px) {
+    &__two-image img {
+      width: 237px;
+    }
     &__box {
       width: 46%;
     }
+  }
+  @media (max-width: 576px) {
+
+    &__slide:hover &__image-first {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+    &__overlay {
+      display: none;
+    }
+
   }
   @media (max-width: 450px) {
     &__box {
       width: 100%;
     }
   }
+
 }
